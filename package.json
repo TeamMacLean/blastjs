@@ -1,0 +1,30 @@
+{
+  "name": "blast.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wookoouk/blast.js.git"
+  },
+  "keywords": [
+    "blast"
+  ],
+  "author": "Martin Page <wookoouk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wookoouk/blast.js/issues"
+  },
+  "homepage": "https://github.com/wookoouk/blast.js",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}
