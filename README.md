@@ -1,14 +1,13 @@
 # blast.js
 
-## Library
-### Install
+## Install
 
 ```bash
 npm install blastjs --save
 ```
 
-### Usage
-#### make database
+## Usage
+### make database
 
 ```javascript
 var blast = require('blastjs');
@@ -28,7 +27,7 @@ blast.makeDB(type, fileIn, outPath, name, function(err){
 });
 ```
 
-#### blast n
+### blast n
 ```javascript
 var blast = require('blastjs');
 
@@ -42,19 +41,3 @@ blast.blastN(db, dbPath, function (err, output) {
 });
 
 ```
-
-
-## REST API + Web Interface
-### Install
-```bash
-npm install -g blastjs
-```
-
-### Start
-```bash
-blastjs-server
-```
-
-
-## Desktop App
-TODO
