@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Blast.js</title>
+
+    <link href="./components/terrier/dist/terrier.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Blast.js</h1>
+
+    <div class="row">
+        <div class="col6">
+            <fieldset>
+                <label for="query">Query</label>
+                <textarea id="query" name="query"></textarea>
+            </fieldset>
+        </div>
+        <div class="col6">
+            <fieldset>
+                <label for="fileQuery">file input</label>
+                <input type="file" id="fileQuery" name="fileQuery">
+            </fieldset>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col6">
+            <div class="border border-primary" id="nucleotides">
+                <label class="center">Nucleotide databases</label>
+                <label>
+                    <input type="checkbox" checked> Example
+                </label>
+            </div>
+        </div>
+        <div class="col6">
+            <div class="border border-primary" id="proteins">
+                <label class="center">Protein databases</label>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col12">
+            <div class="right">
+                <button class="button button-primary" id="blast">Blast</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col12">
+            <div class="border" id="output" style="white-space: pre;font-family:monospace;font-weight: 700;">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="./components/terrier/dist/terrier.min.js"></script>
+
+</body>
+
+</html>
