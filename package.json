@@ -2,36 +2,24 @@
   "name": "blastjs",
   "version": "0.4.0",
   "description": "a blast+ wrapper",
-  "homepage": "https://github.com/wookoouk/blast.js",
+  "homepage": "https://github.com/wookoouk/blastjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wookoouk/blast.js.git"
+    "url": "https://github.com/wookoouk/blastjs.git"
   },
   "keywords": [
-    "blast"
+    "blast",
+    "blast+",
+    "nodejs",
+    "javascript"
   ],
-  "bin": {
-    "blastjs-server": "./bin/server.js"
-  },
   "author": "Martin Page <wookoouk@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wookoouk/blast.js/issues"
-  },
-  "devDependencies": {
-    "electron-packager": "^4.1.3",
-    "electron-prebuilt": "^0.28.1",
-    "gulp": "^3.8.11",
-    "gulp-clean": "^0.3.1",
-    "gulp-electron": "0.0.8",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.2.0"
-  },
-  "dependencies": {
-    "express": "^4.13.3"
+    "url": "https://github.com/wookoouk/blastjs/issues"
   }
 }
