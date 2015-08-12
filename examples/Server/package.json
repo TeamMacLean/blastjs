@@ -1,5 +1,5 @@
 {
-  "name": "blastjs-example-desktop",
+  "name": "blastjs-example-server",
   "version": "0.1.0",
   "description": "an example from blastjs",
   "homepage": "https://github.com/wookoouk/blast.js",
@@ -15,7 +15,7 @@
     "blast"
   ],
   "bin": {
-    "blastjs-server": "./bin/server.js"
+    "blastjs-server": "./server.js"
   },
   "author": "Martin Page <wookoouk@gmail.com>",
   "license": "MIT",

@@ -4,15 +4,6 @@ var rename = require('gulp-rename');
 var electron = require('gulp-electron');
 
 
-//gulp.task('dist', function () {
-//  return gulp.src('lib/blast.js')
-//    .pipe(gulp.dest('dist'))
-//    .pipe(uglify())
-//    .pipe(rename({suffix: '.min'}))
-//    .pipe(gulp.dest('dist'))
-//});
-
-
 gulp.task('desktop', function () {
   var packageJson = require('./package.json');
   gulp.src("")
