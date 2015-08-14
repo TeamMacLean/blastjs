@@ -1,5 +1,11 @@
 # blast.js
 
+## About
+
+## Examples
+
+Example applications can be found at [github.com/wookoouk/blastjs-examples](https://github.com/wookoouk/blastjs-examples)
+
 ## Install
 
 ```bash
@@ -32,7 +38,7 @@ blast.makeDB(type, fileIn, outPath, name, function(err){
 var blast = require('blastjs');
 
 var dbPath = './myDatabase';
-var query = 'TGACTGACTGACTGACTGACTGAC';
+var query = 'ACGTGCCACGATTCAACGTGGCACAG';
 
 blast.blastN(db, dbPath, function (err, output) {
   if(!err){
