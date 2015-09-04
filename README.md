@@ -1,4 +1,5 @@
 # blast.js
+[![Build Status](https://travis-ci.org/wookoouk/blastjs.svg?branch=master)](https://travis-ci.org/wookoouk/blastjs)
 
 ## About
 
@@ -40,7 +41,7 @@ var blast = require('blastjs');
 var dbPath = './myDatabase';
 var query = 'ACGTGCCACGATTCAACGTGGCACAG';
 
-blast.blastN(db, dbPath, function (err, output) {
+blast.blastN(db, query, function (err, output) {
   if(!err){
     console.log(output);
   }
