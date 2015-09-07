@@ -19,10 +19,10 @@ npm install blastjs --save
 ```javascript
 var blast = require('blastjs');
 
-var type = 'prot';
-var fileIn = './data.fasta';
+var type = 'nucl';
+var fileIn = './test.fasta';
 var outPath = './';
-var name = 'myDatabase';
+var name = 'example';
 
 
 blast.makeDB(type, fileIn, outPath, name, function(err){
@@ -38,8 +38,8 @@ blast.makeDB(type, fileIn, outPath, name, function(err){
 ```javascript
 var blast = require('blastjs');
 
-var dbPath = './myDatabase';
-var query = 'ACGTGCCACGATTCAACGTGGCACAG';
+var dbPath = './example';
+var query = 'CTAATACCGAATAAGGTCAGTTAATTTGTTAATTGATGAAAGGAAGCCTT';
 
 blast.blastN(db, query, function (err, output) {
   if(!err){
