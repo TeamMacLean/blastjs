@@ -10,7 +10,7 @@ Example applications can be found at [github.com/wookoouk/blastjs-examples](http
 ## Install
 
 ```bash
-npm install blastjs --save
+npm install blastjs
 ```
 
 ## Usage

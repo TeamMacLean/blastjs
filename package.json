@@ -1,6 +1,6 @@
 {
   "name": "blastjs",
-  "version": "0.5.2",
+  "version": "1.0.0",
   "description": "a blast+ wrapper",
   "homepage": "https://github.com/wookoouk/blastjs",
   "main": "index.js",
