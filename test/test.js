@@ -9,7 +9,9 @@ describe('blast', function () {
     var query = 'CTAATACCGAATAAGGTCAGTTAATTTGTTAATTGATGAAAGGAAGCCTT';
 
     it('should not get an error', function (done) {
+      blast.outputString(true);
       blast.blastN(dbPath, query, function (err, output) {
+        console.log(output);
         assert.equal(err, null);
         done();
       });
