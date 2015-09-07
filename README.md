@@ -38,6 +38,8 @@ blast.makeDB(type, fileIn, outPath, name, function(err){
 ```javascript
 var blast = require('blastjs');
 
+blast.outputString(true); *optional*
+
 var dbPath = './example';
 var query = 'CTAATACCGAATAAGGTCAGTTAATTTGTTAATTGATGAAAGGAAGCCTT';
 
