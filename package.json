@@ -1,11 +1,11 @@
 {
   "name": "blastjs",
-  "version": "1.0.0",
+  "version": "1.1.",
   "description": "a blast+ wrapper",
   "homepage": "https://github.com/wookoouk/blastjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,7 @@
   },
   "keywords": [
     "blast",
-    "blast+",
-    "nodejs",
-    "javascript"
+    "blast+"
   ],
   "author": "Martin Page <wookoouk@gmail.com>",
   "license": "MIT",
@@ -23,5 +21,6 @@
     "url": "https://github.com/wookoouk/blastjs/issues"
   },
   "dependencies": {
+    "xml2js": "^0.4.12"
   }
 }

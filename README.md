@@ -41,7 +41,7 @@ var blast = require('blastjs');
 var dbPath = './example';
 var query = 'CTAATACCGAATAAGGTCAGTTAATTTGTTAATTGATGAAAGGAAGCCTT';
 
-blast.blastN(db, query, function (err, output) {
+blast.blastN(dbPath, query, function (err, output) {
   if(!err){
     console.log(output);
   }
