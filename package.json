@@ -5,7 +5,7 @@
   "homepage": "https://github.com/wookoouk/blastjs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   },
   "dependencies": {
     "xml2js": "^0.4.12"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.1"
   }
 }
