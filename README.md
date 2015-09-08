@@ -52,7 +52,7 @@ blast.blastN(dbPath, query, function (err, output) {
 ```
 
 ## API
-* .makeDB(type, fileIn, outPath, name, cb)
+* .makeDB(type, fileIn, outPath, name, cb)    
   callback is passed (err, stdOut, stdErr, fileOut).
   
 * .blastN(db, query, cb)    
