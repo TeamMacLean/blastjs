@@ -52,10 +52,24 @@ blast.blastN(dbPath, query, function (err, output) {
 ```
 
 ## API
-.makeDB
-.blastN
-.blastP
-.blastX
-.tblastN
-.tblastX
-.outputString
+* .makeDB(type, fileIn, outPath, name, cb)
+  callback is passed (err, stdOut, stdErr, fileOut).
+  
+* .blastN(db, query, cb)
+  callback is passed (err, output).
+  
+* .blastP(db, query, cb)
+  callback is passed (err, output).
+  
+* .blastX(db, query, cb)
+  callback is passed (err, output).
+  
+* .tblastN(db, query, cb)
+  callback is passed (err, output).
+  
+* .tblastX(db, query, cb)
+  callback is passed (err, output).
+  
+* .outputString(boolean)
+  this toggles the output being in a string (true) or as JSON (false).
+  default is JSON.
