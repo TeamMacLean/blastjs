@@ -1,7 +1,6 @@
 # blast.js
 [![Build Status](https://travis-ci.org/wookoouk/blastjs.svg?branch=master)](https://travis-ci.org/wookoouk/blastjs)
-
-## About
+>a BLAST+ wrapper for Node.js
 
 ## Examples
 
