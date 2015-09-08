@@ -13,6 +13,12 @@ Example applications can be found at [github.com/wookoouk/blastjs-examples](http
 npm install blastjs
 ```
 
+If Blast+ is not installed you can run:    
+```bash
+node util/getBlast.js
+```
+and the latest version of Blast+ will be downloaded and placed in the bin folder for you.
+
 ## Usage
 ### make database
 

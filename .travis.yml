@@ -6,4 +6,4 @@ node_js:
 services:
   - mongodb
 before_script:
-  - node getBlast.js
+  - node util/getBlast.js
