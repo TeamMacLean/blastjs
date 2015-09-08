@@ -1,5 +1,5 @@
 var OS = require('os');
-//var Download = require('download');
+var Download = require('download');
 var Client = require('ftp');
 
 var tt = 'ftp.ncbi.nlm.nih.gov';
@@ -29,7 +29,6 @@ c.on('ready', function () {
       if (l.name.indexOf(platform) > -1) {
         if (l.name.indexOf(arch) > -1) {
           if (l.name.indexOf('md5') === -1) {
-            //console.log(l.name, 'this is the one!');
             foundIt = true;
             fileName = l.name;
           }
@@ -41,29 +40,18 @@ c.on('ready', function () {
     } else {
 
       var finalURL = tt + address + fileName;
-      console.log('DOWNLOAD', finalURL);
+      downloadIt(finalURL);
     }
     c.end();
   });
 });
 c.connect({host: tt});
 
-if (platform == 'linux') {
 
-} else if (platform == 'windows') {
-
-} else if (platform == 'darwin') {
-
-} else {
-
+function downloadIt(url) {
+  console.log('Downloading', url, '...');
+  new Download({mode: '755', extract: true})
+    .get('http://' + url) //have to add http to url
+    .dest('bin')
+    .run();
 }
-
-
-//console.log('downloading');
-//new Download({mode: '755', extract: true})
-//  .get(tt)
-//  .dest('bin')
-//  .run();
-
-
-//curl ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.2.31+-src.zip

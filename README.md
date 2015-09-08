@@ -50,3 +50,12 @@ blast.blastN(dbPath, query, function (err, output) {
 });
 
 ```
+
+## API
+.makeDB
+.blastN
+.blastP
+.blastX
+.tblastN
+.tblastX
+.outputString
