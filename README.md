@@ -1,10 +1,6 @@
 # blast.js
-[![Build Status](https://travis-ci.org/wookoouk/blastjs.svg?branch=master)](https://travis-ci.org/wookoouk/blastjs)
+[![Build Status](https://travis-ci.org/TeamMacLean/blastjs.svg?branch=master)](https://travis-ci.org/TeamMacLean/blastjs)
 >a BLAST+ wrapper for Node.js
-
-## Examples
-
-Example applications can be found at [github.com/wookoouk/blastjs-examples](https://github.com/wookoouk/blastjs-examples)
 
 ## Install
 
