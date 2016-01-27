@@ -8,6 +8,7 @@ var dbPath = path.join(__dirname + '/example');
 
 
 describe('blast', function () {
+  this.timeout(15000);
   describe('#blastN', function () {
     it('should not get an error', function (done) {
       blast.outputString(true);
