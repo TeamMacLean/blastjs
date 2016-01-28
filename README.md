@@ -39,7 +39,7 @@ blast.makeDB(type, fileIn, outPath, name, function(err){
 ```javascript
 var blast = require('blastjs');
 
-blast.outputString(true); *optional*
+blast.outputString(true); //optional, provides string output instead of JSON
 
 var dbPath = './example';
 var query = '>24.6jsd2.Tut\nGGTGTTGATCATGGCTCAGGACAAACGCTGGCGGCGTGCTTAATACATGCAAGTCGAACGGGCTACCTTCGGGTAGCTAGTG'
