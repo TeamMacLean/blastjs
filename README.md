@@ -4,6 +4,8 @@
 
 ## Install
 
+If you do not have Node.js installed you can get it at [https://nodejs.org](https://nodejs.org)
+
 ```bash
 npm install blastjs
 ```
