@@ -2,6 +2,8 @@
 [![Build Status](https://travis-ci.org/TeamMacLean/blastjs.svg?branch=master)](https://travis-ci.org/TeamMacLean/blastjs)
 >a BLAST+ wrapper for Node.js
 
+a demo can be found at [github.com/teammaclean/blastjs-demo](https://github.com/teammaclean/blastjs-demo)
+
 ## Install
 
 If you do not have Node.js installed you can get it at [https://nodejs.org](https://nodejs.org)
