@@ -23,6 +23,7 @@
   "dependencies": {
     "download": "^4.2.0",
     "ftp": "^0.3.10",
+    "tar.gz": "^1.0.5",
     "xml2js": "^0.4.12"
   },
   "devDependencies": {
