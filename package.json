@@ -23,7 +23,9 @@
   "dependencies": {
     "download": "^4.2.0",
     "ftp": "^0.3.10",
+    "lodash": "^4.16.6",
     "tar.gz": "1.0.2",
+    "uuid": "^2.0.3",
     "xml2js": "^0.4.12"
   },
   "devDependencies": {
