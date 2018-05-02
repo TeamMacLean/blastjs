@@ -10,7 +10,7 @@ var arch = OS.arch();
 
 if (platform === 'darwin') {
   platform = 'macosx';
-  arch = 'universal';
+  arch = '';
 }
 
 var foundIt = false;
