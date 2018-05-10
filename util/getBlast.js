@@ -1,6 +1,8 @@
 var OS = require('os');
 var Download = require('download');
 var Client = require('ftp');
+var fs = require('fs');
+var targz = require('tar.gz');
 
 var tt = 'ftp.ncbi.nlm.nih.gov';
 var address = '/blast/executables/blast+/LATEST/';
@@ -8,7 +10,7 @@ var address = '/blast/executables/blast+/LATEST/';
 var platform = OS.platform();
 var arch = OS.arch();
 
-if(platform === 'win32'){
+if(platform === 'win32') {
   platform = 'win64';
 }
 
@@ -51,11 +53,24 @@ c.on('ready', function () {
 });
 c.connect({host: tt});
 
-
 function downloadIt(url) {
   console.log('Downloading', url, '...');
-  new Download({mode: '755', extract: true})
+  new Download({mode: '755'})
     .get('http://' + url) //have to add http to url
     .dest('bin')
-    .run();
+    .run(extractIt);
+}
+
+function extractIt(err){
+  if(err) throw err;
+
+  console.log('Extracting file', 'bin/' + fileName);
+  targz().extract('bin/' + fileName, 'bin/', deleteIt);
+}
+
+function deleteIt(err){
+  if(err) throw err;
+  
+  console.log('Cleaning up ...');
+  fs.unlinkSync('bin/' + fileName);
 }
