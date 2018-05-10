@@ -1,6 +1,6 @@
 {
   "name": "blastjs",
-  "version": "1.5.3",
+  "version": "1.6.6",
   "description": "a blast+ wrapper",
   "homepage": "https://github.com/wookoouk/blastjs",
   "main": "index.js",
@@ -24,7 +24,7 @@
     "download": "^4.2.0",
     "ftp": "^0.3.10",
     "lodash": "^4.16.6",
-    "tar.gz": "1.0.2",
+    "tar": "^4.4.2",
     "uuid": "^2.0.3",
     "xml2js": "^0.4.12"
   },
