@@ -8,9 +8,13 @@ var address = '/blast/executables/blast+/LATEST/';
 var platform = OS.platform();
 var arch = OS.arch();
 
+if(platform === 'win32'){
+  platform = 'win64';
+}
+
 if (platform === 'darwin') {
   platform = 'macosx';
-  arch = '';
+  arch = 'x64';
 }
 
 var foundIt = false;
